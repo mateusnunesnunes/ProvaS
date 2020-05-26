@@ -1,5 +1,9 @@
 # ProvaS
 
-# Questão 7
+# Questões
+Para rodar os exercicios, basta colocá-los em um mesmo diretório e rodar utilizando um compilador JAVA,todos os exercicios foram feitos em classes separadas, com suas respectivas funções presentes na classe principal, para rodar qualquer uma delas, basta descomentar a desejada. Dentro da classe principal há mais explicações.
 
-Existe um arquivo chamado Fibonacci.java, ele contém o código Fibonacci, existe outro arquivo chamado ProvaSiemens.java, nele há a classe principal, para rodar, deixe os dois arquivos no mesmo diretório e execute a classe principal com um compilador JAVA. 
+
+
+
+

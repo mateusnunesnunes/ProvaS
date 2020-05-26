@@ -16,12 +16,19 @@ public class ProvaSiemens {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        fibonacci();
-           
+        //Descomentar linha 20 para rodar Fibonacci
+        //fibonacci();
+        //Descomentar linha 22 para rodar Contador de string
+        contarString();
     }
     
-    
+    public static void contarString(){
+        Scanner scanner = new Scanner(System.in);
+      	System.out.print("Escreva a string que você quer contar: ");
+        String string = scanner.next();
+        System.out.print("O tamanho de "+string+" é: " + CalculaTamanho.calculaTamanho(string)+"\n");
+        
+    }
     
     public static void fibonacci(){
         
@@ -31,4 +38,5 @@ public class ProvaSiemens {
         System.out.print("(O numero escolhido foi: "+numero+"): " + Fibonacci.fibonacci(numero)+"\n");
         
     }
+    
 }

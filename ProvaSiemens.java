@@ -17,31 +17,34 @@ public class ProvaSiemens {
      */
     public static void main(String[] args) {
         //Descomentar linha 20 para rodar Fibonacci
-        //fibonacci();
+//        fibonacci();
         //Descomentar linha 22 para rodar Contador de string
         //contarString();
+        //Descomentar linha 23 para rodar Pesquisa Linear
         pesquisaLinear();
+        //Descomentar linha 26 para rodar Inversor Caracteres
+        //inverter();
     }
     
-    public static void pesquisaLinear(){
-        System.out.println("Existe uma fila de militares, eles são nomeados por\n"
-                + "números, ao todo são 9 militares e eles estão desorganizados em uma fila,\n"
-                + "os superiores precisam realizar a chamada para verificar se o militar está presente,\n"
-                + "e precisa saber sua posição na fila, para que ele possa organizar a fila mais tarde."
-                + "");
-        System.out.println("Fila de militares: 12,32,54,21,8,89,2,64,6");
-        int[] vetor = {12,32,54,21,8,89,2,64,6};//número dos militares 
-        System.out.println("Chamando militar 12");
-        int resultado = PesquisaLinear.pesquisar(vetor,vetor.length,12);//realizando chamada
-        System.out.println((resultado == -1) ? "Militar não encontrado" : "Militar está na posição "+resultado);
-        //outra execucão
-        System.out.println("Chamando militar 34");
-        int resultado2 = PesquisaLinear.pesquisar(vetor,vetor.length,34);//realizando chamada
-        System.out.println((resultado2 == -1) ? "Militar não encontrado" : "Militar está na posição "+resultado2);
+    public static void inverter(){
+        Scanner scanner = new Scanner(System.in);
+      	System.out.print("Escreva a string que você quer inverter: ");
+        String string = scanner.next();
+        System.out.println(InverterString.inverter(string));
         
     }
     
-    
+    public static void pesquisaLinear(){
+        //verificar qual é o termo de fibonacci, mandando seu resultado
+        
+        Scanner scanner = new Scanner(System.in);
+      	System.out.print("Digite o termo que deseja saber através do resultado em fibonacci\nlembre-se mantemos em nossos dados até o termo 12: ");
+        int numero = scanner.nextInt();        
+        int[] vetor = {0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144};
+        int resultado = PesquisaLinear.pesquisar(vetor,vetor.length,numero);//realizando chamada
+        System.out.println((resultado == -1) ? "Número não se encontra nos registros" : "O resultado "+numero+" possui o termo "+resultado);
+        
+    }
     
     public static void contarString(){
         Scanner scanner = new Scanner(System.in);

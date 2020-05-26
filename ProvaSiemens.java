@@ -17,11 +17,11 @@ public class ProvaSiemens {
      */
     public static void main(String[] args) {
         //Descomentar linha 20 para rodar Fibonacci
-//        fibonacci();
+        fibonacci();
         //Descomentar linha 22 para rodar Contador de string
         //contarString();
         //Descomentar linha 23 para rodar Pesquisa Linear
-        pesquisaLinear();
+        //pesquisaLinear();
         //Descomentar linha 26 para rodar Inversor Caracteres
         //inverter();
     }
